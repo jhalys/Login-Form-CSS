@@ -1,0 +1,162 @@
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-base);
+    background: var(--background);
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 50%;
+}
+
+.box {
+    box-sizing: border-box;
+    background: var(--form-background);
+    margin: 7rem 6rem;
+    padding: 4rem 6rem;
+    width: 33rem;
+    height: 28rem;
+}
+
+.login {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.box h3 {
+    color: var(--text-title);
+    font-size: 22px;
+    padding: 0.2rem 0;
+}
+
+.box p {
+    color: var(--text-base);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-bottom: 1rem;
+}
+
+.box form input {
+    background: var(--form-background);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+    width: 20rem;
+    height: 2.5rem;
+}
+
+#email:focus-within {
+    background-image: url(/images/mail-focus.svg);
+    color: white;
+    outline: var(--primary-color) solid 2px;
+}
+
+#email {
+    background-image: url(images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    margin-bottom: 0.8rem;
+    padding-left: 2.1rem;
+}
+
+#password:focus-within {
+    background-image: url(/images/lock-focus.svg);
+    color: white;
+    outline: var(--primary-color) solid 2px;
+}
+
+#password {
+    background-image: url(/images/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 0.5rem;
+    padding-left: 2.1rem;
+}
+
+.lnr-eye {
+    background-image: url(/images/eye.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 25.8rem;
+    right: 65.8rem;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkbox + label:before {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-top: 0.7rem;
+    margin-right: 0.3rem;
+    margin-bottom: -0.2rem;
+    border-radius: 4px;
+    border: 1px solid var(--text-base);
+}
+
+.checkbox:checked + label:before {
+    background: var(--primary-color);
+    background-image: url(/images/check.svg);
+    background-size: cover;
+}
+
+.box form label {
+    font-size: 13px;
+}
+
+.remember a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    padding-left: 5.4rem;
+}
+
+.box form button {
+    background: var(--primary-color);
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    color: #473404;
+    margin: 0.6rem 0;
+    width: 20rem;
+    height: 2.8rem;
+}
+
+.box form p, p a {
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.image {
+    background-image:url(images/side-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    width: 50%;
+}
+
+

@@ -1,0 +1,57 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form CSS</title>
+
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="logo">
+            <img src="images/logo.svg" alt="Ícone de dois triângulos, sem preenchimento de cor, sobrepostos.
+            As arestas são na cor branca, e as arestas inferiores estão curvadas para dentro do triângulo.">
+        </div>   
+        <div class="box">
+            <div class="login">
+                <img src="images/log-in.svg" alt="Seta laranja para a direita e uma chave matemática à frente">
+                <h3>Faça seu login</h3>
+            </div>
+
+            <p>Entre com suas informações de cadastro.</p>
+
+            <form action="">
+                <div class="email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="on">
+                </div>
+                
+                <div class="password">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" placeholder="Digite sua senha">
+                    <span class="lnr lnr-eye"></span>
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox" class="checkbox" name="remember" id="remember">
+                    <label for="remember">Lembre-me</label>
+                    <a href="#"><strong>Esqueci minha senha</strong></a>
+                </div>
+
+                <button type="submit"><strong>ENTRAR</strong></button>
+                <p>
+                    Não tem uma conta?
+                    <a href="#"><strong>Registre-se</strong></a>
+                </p>
+            </form>
+        </div>
+    </main>
+    <div class="image"></div>
+</body>
+</html>
